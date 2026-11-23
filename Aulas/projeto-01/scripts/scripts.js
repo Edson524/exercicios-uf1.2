@@ -11,7 +11,7 @@ let nota; //undefined
 let media = null; //valor intencional de vazio
 
 
-const morada = "Tarrafal"; //string
+const morada = "Tarrafal"; //string hh
 
 nome = "Monts";
 idade = 22;
