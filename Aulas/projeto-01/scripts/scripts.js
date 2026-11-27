@@ -194,3 +194,93 @@ while (totalPoupado <= precoMoinho){
     console.log(`Foi poupado ${totalPoupado} escudos`);
 
 b}
+
+// FUNÇÕES
+
+function saudar(){
+    console.log("ola, bem vindo ao cafe Morabeza");
+}
+saudar();//chamar a funcao e executar o codigo
+let nomeCliente;
+function receberNomeDoCliente(nomeCliente){
+    nomeCliente = nome;
+}
+//funcao
+function saudarNovoCliente(){
+    console.log(`ola ${nomeCliente}, bem vindo ao café Morabeza`)
+}
+
+
+receberNomeDoCliente("Leandro");
+saudarNovoCliente ();
+//funcao
+function calcularDesconto(quantidade, temCartao){
+    let desconto = 0;
+    if (desconto >= 10){
+        desconto = 15;
+    } else if(quantidade >= 5){
+        desconto = 10;
+    }
+    if (temCartao){
+        desconto += 5;
+    }
+    return desconto;
+}
+const valorDeDesconto = calcularDesconto(5, true);// variavel valorDeDesconto recebe o valor de retorno da funcao ex:(15)
+console.log(`Desconto calculado: ${valorDeDesconto}`);
+function aplicarDesconto(subtotal, desconto){
+    let valorFinal;
+    valorFinal = subtotal - (subtotal * desconto) / 100;
+    return valorFinal;
+}
+let totalAPagar = aplicarDesconto(150, valorDeDesconto);
+console.log(`O valor final a pagar é de^: ${totalAPagar}CVE`);
+function nomeDaFuncao(parametro){
+    //corpo da funcao
+    //retorno da funcao
+}
+const nomeDoArrowFuncao = () => {
+    //corpo da funcao
+    //retorno da funcao
+}
+nomeDaFuncao("parametro");
+//Arrays
+const produtos = ["Cafe", "Capuccino", "Mocha", "Ice Tea", "Sopa"];
+console.log(produtos);
+console.log(produtos[2]);
+produtos[4] = "Sanduiche";//substitui o item na posicao 4
+produtos.push("Bolo");//adiciona mais um item no final do array
+produtos.pop();//remove o ultimo elemento do array
+//arrays de alunos
+const alunos = [
+    {
+        nome: "Leandro",
+        idade: 17,
+        morada: "Vila Nova",
+    },
+    {
+        nome: "Edson",
+        idade: 200,
+        morada: "Um zona Ki tem nomi stranho",
+    },
+    {
+        nome: "Keven",
+        idade: 30,
+        morada: "Eugenio Lima",
+    },
+];
+//adiciona mais um aluno no final do array
+alunos.push({
+    nome: "Tiza",
+    idade: 20,
+    morada: "Achadinha",
+});
+//=============================================
+//substitui o item (morada) na posicao 1
+alunos[1].morada = "Dubai";
+console.log(alunos);
+//==============================================
+//nka sabi pake ki ta sirbi
+for (let i = 0; i < alunos.length; i++){
+    console.log(alunos[i]);
+}
